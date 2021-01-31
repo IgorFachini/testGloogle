@@ -11,6 +11,8 @@
  *   "src-ssr/extension.js"
  */
 
+const functions = require('firebase-functions') // <---- ADD FIREBASE FUNCTIONS
+
 const express = require('express')
 const compression = require('compression')
 
@@ -99,6 +101,7 @@ app.get(ssr.resolveUrl('*'), (req, res) => {
   })
 })
 
-app.listen(port, () => {
-  console.log(`Server listening at port ${port}`)
-})
+// app.listen(port, () => {
+//   console.log(`Server listening at port ${port}`)
+// })
+exports.ssrapp = functions.https.onRequest(app) // <- "ssrapp" name is the same as in firebase.json

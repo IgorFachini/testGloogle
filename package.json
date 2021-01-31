@@ -8,12 +8,15 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
-    "build:ssr": "quasar build -m ssr"
+    "build:ssr": "quasar build -m ssr",
+    "build": "quasar build -m ssr"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "axios": "^0.18.1",
     "core-js": "^3.6.5",
+    "firebase-admin": "^9.4.2",
+    "firebase-functions": "^3.13.1",
     "quasar": "^1.0.0"
   },
   "devDependencies": {

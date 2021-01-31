@@ -4,10 +4,7 @@
       alt="Quasar logo"
       src="~assets/quasar-logo-full.svg"
     >
-    <q-btn
-      label="home"
-      @click="$router.push('/home')"
-    />
+    <h1>index2</h1>
   </q-page>
 </template>
 
